@@ -16,43 +16,32 @@ def generate_m3u():
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
+
+        # আপনার ফাইলের আসল ডাটা ফরম্যাট অনুযায়ী Regex
+        # এটি { name: "Channel Name", slug: "ChannelSlug" } এই অংশগুলো খুঁজে নেবে
+        channels = re.findall(r'name\s*:\s*["\'](.*?)["\']\s*,\s*slug\s*:\s*["\'](.*?)["\']', content)
+
+        if not channels:
+            print("❌ ফাইলের ভেতর থেকে চ্যানেলের তথ্য রিড করা যাচ্ছে না।")
+            return
+
+        m3u_content = "#EXTM3U\n"
+        print(f"🚀 {len(channels)}টি চ্যানেল পাওয়া গেছে। প্লেলিস্ট তৈরি হচ্ছে...")
+
+        for name, slug in channels:
+            # m3u ফরম্যাট
+            stream_url = f"{BASE_URL}/{slug}/index.m3u8"
+            m3u_content += f'#EXTINF:-1 tvg-id="{slug}" tvg-name="{name}", {name}\n'
+            m3u_content += f'#EXTVLCOPT:http-referrer=http://{TARGET_IP}/\n'
+            m3u_content += f"{stream_url}\n"
+
+        with open("permanent_list.m3u8", "w", encoding="utf-8") as f:
+            f.write(m3u_content)
+        
+        print(f"✅ সফল! {len(channels)}টি চ্যানেল নিয়ে permanent_list.m3u8 তৈরি হয়েছে।")
+
     except Exception as e:
-        print(f"❌ ফাইল পড়তে সমস্যা হচ্ছে: {e}")
-        return
-
-    # জাভাস্ক্রিপ্ট অবজেক্টের ভেতর থেকে ডাটা টেনে আনার সবচেয়ে শক্তিশালী Regex
-    # এটি name: "...", slug: "..." সব ফরম্যাট ধরবে
-    names = re.findall(r'name\s*:\s*["\'](.*?)["\']', content)
-    slugs = re.findall(r'slug\s*:\s*["\'](.*?)["\']', content)
-
-    if not names or not slugs:
-        print("❌ কোনো ডাটা খুঁজে পাওয়া যায়নি। ফাইলের ফরম্যাটটি সম্ভবত বদলে গেছে।")
-        return
-
-    # নাম এবং স্ল্যাগ এর সংখ্যা সমান করার জন্য জিপ করা
-    channels = list(zip(names, slugs))
-
-    m3u_content = "#EXTM3U\n"
-    print(f"🚀 {len(channels)}টি চ্যানেল পাওয়া গেছে। প্লেলিস্ট তৈরি হচ্ছে...")
-
-    for name, slug in channels:
-        # অপ্রয়োজনীয় ক্যারেক্টার ক্লিন করা
-        clean_name = name.strip()
-        clean_slug = slug.strip()
-        
-        stream_url = f"{BASE_URL}/{clean_slug}/index.m3u8"
-        
-        m3u_content += f'#EXTINF:-1 tvg-id="{clean_slug}" tvg-name="{clean_name}" group-title="SM BDIX", {clean_name}\n'
-        # প্লেয়ারের জন্য হেডার
-        m3u_content += f'#EXTVLCOPT:http-referrer=http://{TARGET_IP}/\n'
-        m3u_content += f"{stream_url}\n"
-
-    # আউটপুট ফাইল সেভ করা
-    output_file = "permanent_list.m3u8"
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(m3u_content)
-    
-    print(f"✅ সফলভাবে {output_file} তৈরি হয়েছে! মোট চ্যানেল: {len(channels)}")
+        print(f"❌ এরর: {e}")
 
 if __name__ == "__main__":
     generate_m3u()
