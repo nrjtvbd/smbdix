@@ -1,37 +1,48 @@
 import requests
+import re
 import os
 
-# কনফিগারেশন
+# CONFIGURATION
 TARGET_IP = "198.195.239.50"
 TARGET_PORT = "8095"
 BASE_URL = f"http://{TARGET_IP}:{TARGET_PORT}"
 
-# smisp.txt থেকে পাওয়া গুরুত্বপূর্ণ চ্যানেলের লিস্ট (আপনি চাইলে আরও বাড়াতে পারেন)
-channels = [
-    {"name": "STAR GOLD", "slug": "StarGold"},
-    {"name": "STAR SPORTS 1", "slug": "StarSports1"},
-    {"name": "SONY TEN 1", "slug": "SonyTen1"},
-    {"name": "TSPORTS", "slug": "TSports"},
-    {"name": "STAR JALSHA", "slug": "StarJalsha"},
-    {"name": "ZEE BANGLA", "slug": "ZeeBangla"}
-]
-
 def generate_m3u():
-    m3u_content = "#EXTM3U\n"
-    print("🚀 Generating Permanent Playlist...")
+    # smisp.txt file-ti read kora
+    try:
+        with open("smisp.txt", "r", encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        print("❌ smisp.txt file-ti pawa jayni!")
+        return
 
-    for ch in channels:
-        # সরাসরি লিঙ্ক তৈরি (যেহেতু এখন টোকেন নেই, কিন্তু ভবিষ্যতে থাকলে এখানে জেনারেট করা যাবে)
-        stream_url = f"{BASE_URL}/{ch['slug']}/index.m3u8"
+    # Regex diye shob channel name ebong slug (slug: StarGold/index.m3u8) ber kora
+    # smisp.txt er pattern: { name: "Channel Name", slug: "Channel-Slug" }
+    pattern = r'name:\s*"(.*?)",\s*slug:\s*"(.*?)"'
+    channels = re.findall(pattern, content)
+
+    if not channels:
+        print("❌ Kono channel khuje pawa jayni! Pattern check korun.")
+        return
+
+    m3u_content = "#EXTM3U\n"
+    print(f"🚀 Found {len(channels)} channels. Generating Playlist...")
+
+    for name, slug in channels:
+        # Stream URL toiri (index.m3u8 format-e)
+        stream_url = f"{BASE_URL}/{slug}/index.m3u8"
         
-        m3u_content += f'#EXTINF:-1 tvg-name="{ch["name"]}", {ch["name"]}\n'
-        # হেডার যোগ করা যাতে প্লেয়ারে চলতে সুবিধা হয়
+        m3u_content += f'#EXTINF:-1 tvg-name="{name}" group-title="BDIX", {name}\n'
+        # Player-er jonno proyojoniyo headers
         m3u_content += f'#EXTVLCOPT:http-referrer=http://{TARGET_IP}/\n'
+        m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n'
         m3u_content += f"{stream_url}\n"
 
+    # Playlist file save kora
     with open("permanent_list.m3u8", "w", encoding="utf-8") as f:
         f.write(m3u_content)
-    print("✅ Playlist generated successfully!")
+    
+    print(f"✅ Successfully generated permanent_list.m3u8 with {len(channels)} channels!")
 
 if __name__ == "__main__":
     generate_m3u()
