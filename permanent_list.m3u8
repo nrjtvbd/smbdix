@@ -1,0 +1,19 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="STAR GOLD", STAR GOLD
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/StarGold/index.m3u8
+#EXTINF:-1 tvg-name="STAR SPORTS 1", STAR SPORTS 1
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/StarSports1/index.m3u8
+#EXTINF:-1 tvg-name="SONY TEN 1", SONY TEN 1
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/SonyTen1/index.m3u8
+#EXTINF:-1 tvg-name="TSPORTS", TSPORTS
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/TSports/index.m3u8
+#EXTINF:-1 tvg-name="STAR JALSHA", STAR JALSHA
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/StarJalsha/index.m3u8
+#EXTINF:-1 tvg-name="ZEE BANGLA", ZEE BANGLA
+#EXTVLCOPT:http-referrer=http://198.195.239.50/
+http://198.195.239.50:8095/ZeeBangla/index.m3u8
