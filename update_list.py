@@ -1,5 +1,4 @@
 import os
-import re
 
 # কনফিগারেশন
 TARGET_IP = "198.195.239.50"
@@ -13,51 +12,42 @@ def generate_m3u():
         print(f"❌ Error: {file_path} পাওয়া যায়নি!")
         return
 
+    m3u_content = "#EXTM3U\n"
+    channels_found = 0
+
     try:
         with open(file_path, "r", encoding="utf-8") as f:
-            content = f.read()
+            lines = f.readlines()
+            
+            current_name = ""
+            for line in lines:
+                # লাইন থেকে name খুঁজে বের করা
+                if 'name:' in line:
+                    current_name = line.split('name:')[1].split(',')[0].strip().replace('"', '').replace("'", "")
+                
+                # লাইন থেকে slug খুঁজে বের করা এবং লিঙ্ক তৈরি করা
+                if 'slug:' in line and current_name:
+                    current_slug = line.split('slug:')[1].split(',')[0].strip().replace('"', '').replace("'", "").replace("}", "")
+                    
+                    # m3u ফরম্যাটে ডাটা যোগ করা
+                    stream_url = f"{BASE_URL}/{current_slug}/index.m3u8"
+                    m3u_content += f'#EXTINF:-1 tvg-id="{current_slug}" tvg-name="{current_name}" group-title="SM BDIX", {current_name}\n'
+                    m3u_content += f'#EXTVLCOPT:http-referrer=http://{TARGET_IP}/\n'
+                    m3u_content += f"{stream_url}\n"
+                    
+                    channels_found += 1
+                    current_name = "" # নাম রিসেট করা পরের চ্যানেলের জন্য
+
     except Exception as e:
-        print(f"❌ ফাইল পড়তে সমস্যা হচ্ছে: {e}")
+        print(f"❌ এরর: {e}")
         return
 
-    # জাভাস্ক্রিপ্ট অবজেক্ট ফরম্যাট থেকে ডাটা বের করার জন্য উন্নত Regex
-    # এটি { name: "...", slug: "..." } এবং {name:'...', slug:'...'} দুইটাই ধরবে
-    pattern = r'name\s*:\s*["\'](.*?)["\']\s*,\s*slug\s*:\s*["\'](.*?)["\']'
-    channels = re.findall(pattern, content)
-
-    if not channels:
-        # যদি উপরেরটি কাজ না করে, তবে শুধু ডাবল কোট দিয়ে চেষ্টা করবে
-        pattern_v2 = r'name:\s*"([^"]+)",\s*slug:\s*"([^"]+)"'
-        channels = re.findall(pattern_v2, content)
-
-    if not channels:
-        print("❌ কোনো চ্যানেল পাওয়া যায়নি। অনুগ্রহ করে নিশ্চিত করুন smisp.txt ফাইলটিতে 'name' এবং 'slug' এই শব্দগুলো আছে।")
-        return
-
-    m3u_content = "#EXTM3U\n"
-    print(f"🚀 {len(channels)}টি চ্যানেল সনাক্ত করা হয়েছে। প্লেলিস্ট তৈরি হচ্ছে...")
-
-    count = 0
-    for name, slug in channels:
-        # অপ্রয়োজনীয় স্পেস বা ক্যারেক্টার ক্লিন করা
-        clean_name = name.strip()
-        clean_slug = slug.strip()
-        
-        # m3u ফরম্যাট তৈরি
-        stream_url = f"{BASE_URL}/{clean_slug}/index.m3u8"
-        
-        m3u_content += f'#EXTINF:-1 tvg-id="{clean_slug}" tvg-name="{clean_name}" group-title="SM BDIX", {clean_name}\n'
-        m3u_content += f'#EXTVLCOPT:http-referrer=http://{TARGET_IP}/\n'
-        m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\n'
-        m3u_content += f"{stream_url}\n"
-        count += 1
-
-    # আউটপুট ফাইল সেভ করা
-    output_file = "permanent_list.m3u8"
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(m3u_content)
-    
-    print(f"✅ সফলভাবে {output_file} তৈরি হয়েছে! মোট চ্যানেল: {count}")
+    if channels_found > 0:
+        with open("permanent_list.m3u8", "w", encoding="utf-8") as f:
+            f.write(m3u_content)
+        print(f"✅ সফল! {channels_found}টি চ্যানেল দিয়ে permanent_list.m3u8 তৈরি হয়েছে।")
+    else:
+        print("❌ দুঃখিত, smisp.txt এর ভেতর থেকে কোনো চ্যানেল ডাটা রিড করা সম্ভব হয়নি।")
 
 if __name__ == "__main__":
     generate_m3u()
