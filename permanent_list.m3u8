@@ -1,133 +1,133 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Tsports" tvg-name="TSports HD" tvg-logo="http://103.165.93.31/img/channels/tsports.jpg" group-title="Sports", TSports HD
+#EXTINF:-1 tvg-id="tsportsHd" tvg-name="TSports HD" tvg-logo="http://103.165.93.31/img/channels/tsportshd.png" group-title="Sports", TSports HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/Tsports/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_t.me/tvhoichoi24/video" tvg-name="START SPORTS1" tvg-logo="http://103.165.93.31/img/channels/starsports1hd.png" group-title="Sports", START SPORTS1
+http://103.165.93.31:8095/tsportsHd/index.m3u8
+#EXTINF:-1 tvg-id="startSports1" tvg-name="START SPORTS1" tvg-logo="http://103.165.93.31/img/channels/startsports1.png" group-title="Sports", START SPORTS1
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_t.me/tvhoichoi24/video/index.m3u8
-#EXTINF:-1 tvg-id="StarSports2" tvg-name="STAR SPORTS2" tvg-logo="http://103.165.93.31/img/channels/starsports2hd.png" group-title="Sports", STAR SPORTS2
+http://103.165.93.31:8095/startSports1/index.m3u8
+#EXTINF:-1 tvg-id="starSports2" tvg-name="STAR SPORTS2" tvg-logo="http://103.165.93.31/img/channels/starsports2.png" group-title="Sports", STAR SPORTS2
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarSports2/index.m3u8
-#EXTINF:-1 tvg-id="StarSportsSelect1" tvg-name="STAR SPORTS SELECT1 HD" tvg-logo="http://103.165.93.31/img/channels/star-sports-selected-1.jpg" group-title="Sports", STAR SPORTS SELECT1 HD
+http://103.165.93.31:8095/starSports2/index.m3u8
+#EXTINF:-1 tvg-id="starSportsSelect1Hd" tvg-name="STAR SPORTS SELECT1 HD" tvg-logo="http://103.165.93.31/img/channels/starsportsselect1hd.png" group-title="Sports", STAR SPORTS SELECT1 HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarSportsSelect1/index.m3u8
-#EXTINF:-1 tvg-id="StarSportsSelect2" tvg-name="STAR SPORTS SELECT2 HD" tvg-logo="http://103.165.93.31/img/channels/star-sports-selected-2.jpg" group-title="Sports", STAR SPORTS SELECT2 HD
+http://103.165.93.31:8095/starSportsSelect1Hd/index.m3u8
+#EXTINF:-1 tvg-id="starSportsSelect2Hd" tvg-name="STAR SPORTS SELECT2 HD" tvg-logo="http://103.165.93.31/img/channels/starsportsselect2hd.png" group-title="Sports", STAR SPORTS SELECT2 HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarSportsSelect2/index.m3u8
-#EXTINF:-1 tvg-id="SonyTenSports2" tvg-name="SONY SPORTS 2 HD" tvg-logo="http://103.165.93.31/img/channels/sonySports2.png" group-title="Sports", SONY SPORTS 2 HD
+http://103.165.93.31:8095/starSportsSelect2Hd/index.m3u8
+#EXTINF:-1 tvg-id="sonySports2Hd" tvg-name="SONY SPORTS 2 HD" tvg-logo="http://103.165.93.31/img/channels/sonysports2hd.png" group-title="Sports", SONY SPORTS 2 HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/SonyTenSports2/index.m3u8
-#EXTINF:-1 tvg-id="SonyTenSports5" tvg-name="SONY SPORTS 5 HD" tvg-logo="http://103.165.93.31/img/channels/sonySports5.png" group-title="Sports", SONY SPORTS 5 HD
+http://103.165.93.31:8095/sonySports2Hd/index.m3u8
+#EXTINF:-1 tvg-id="sonySports5Hd" tvg-name="SONY SPORTS 5 HD" tvg-logo="http://103.165.93.31/img/channels/sonysports5hd.png" group-title="Sports", SONY SPORTS 5 HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/SonyTenSports5/index.m3u8
-#EXTINF:-1 tvg-id="Eurosport" tvg-name="EURO SPORTS HD" tvg-logo="http://103.165.93.31/img/channels/euroSports.png" group-title="Sports", EURO SPORTS HD
+http://103.165.93.31:8095/sonySports5Hd/index.m3u8
+#EXTINF:-1 tvg-id="euroSportsHd" tvg-name="EURO SPORTS HD" tvg-logo="http://103.165.93.31/img/channels/eurosportshd.png" group-title="Sports", EURO SPORTS HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/Eurosport/index.m3u8
-#EXTINF:-1 tvg-id="WiLLow" tvg-name="WiLLoW" tvg-logo="http://103.165.93.31/img/channels/willow.jpg" group-title="Sports", WiLLoW
+http://103.165.93.31:8095/euroSportsHd/index.m3u8
+#EXTINF:-1 tvg-id="WiLLoW" tvg-name="WiLLoW" tvg-logo="http://103.165.93.31/img/channels/willow.png" group-title="Sports", WiLLoW
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/WiLLow/index.m3u8
-#EXTINF:-1 tvg-id="PTV-kutta/video" tvg-name="PTV" tvg-logo="http://103.165.93.31/img/channels/ptvsports.png" group-title="Sports", PTV
+http://103.165.93.31:8095/WiLLoW/index.m3u8
+#EXTINF:-1 tvg-id="ptv" tvg-name="PTV" tvg-logo="http://103.165.93.31/img/channels/ptv.png" group-title="Sports", PTV
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/PTV-kutta/video/index.m3u8
-#EXTINF:-1 tvg-id="nagorik" tvg-name="NAGORIK" tvg-logo="http://103.165.93.31/img/channels/nagoriktv.png" group-title="Bangla", NAGORIK
+http://103.165.93.31:8095/ptv/index.m3u8
+#EXTINF:-1 tvg-id="nagorik" tvg-name="NAGORIK" tvg-logo="http://103.165.93.31/img/channels/nagorik.png" group-title="Bangla", NAGORIK
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
 http://103.165.93.31:8095/nagorik/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_somoytv/video" tvg-name="SHOMOY TV HD" tvg-logo="http://103.165.93.31/img/channels/somoytv.png" group-title="News", SHOMOY TV HD
+#EXTINF:-1 tvg-id="shomoyTvHd" tvg-name="SHOMOY TV HD" tvg-logo="http://103.165.93.31/img/channels/shomoytvhd.png" group-title="News", SHOMOY TV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_somoytv/video/index.m3u8
-#EXTINF:-1 tvg-id="News24" tvg-name="NEWS24 HD" tvg-logo="http://103.165.93.31/img/channels/news24.png" group-title="News", NEWS24 HD
+http://103.165.93.31:8095/shomoyTvHd/index.m3u8
+#EXTINF:-1 tvg-id="news24Hd" tvg-name="NEWS24 HD" tvg-logo="http://103.165.93.31/img/channels/news24hd.png" group-title="News", NEWS24 HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/News24/index.m3u8
-#EXTINF:-1 tvg-id="Channel24" tvg-name="CHANNEL 24" tvg-logo="http://103.165.93.31/img/channels/channel24.png" group-title="News", CHANNEL 24
+http://103.165.93.31:8095/news24Hd/index.m3u8
+#EXTINF:-1 tvg-id="channel24" tvg-name="CHANNEL 24" tvg-logo="http://103.165.93.31/img/channels/channel24.png" group-title="News", CHANNEL 24
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/Channel24/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_AtnNews/video" tvg-name="ATN NEWS HD" tvg-logo="http://103.165.93.31/img/channels/atnnews.png" group-title="News", ATN NEWS HD
+http://103.165.93.31:8095/channel24/index.m3u8
+#EXTINF:-1 tvg-id="atnNewsHd" tvg-name="ATN NEWS HD" tvg-logo="http://103.165.93.31/img/channels/atnnewshd.png" group-title="News", ATN NEWS HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_AtnNews/video/index.m3u8
-#EXTINF:-1 tvg-id="ekattor" tvg-name="EKATTOR TV HD" tvg-logo="http://103.165.93.31/img/channels/ekattortv.png" group-title="News", EKATTOR TV HD
+http://103.165.93.31:8095/atnNewsHd/index.m3u8
+#EXTINF:-1 tvg-id="ekattorTvHd" tvg-name="EKATTOR TV HD" tvg-logo="http://103.165.93.31/img/channels/ekattortvhd.png" group-title="News", EKATTOR TV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/ekattor/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_JamunaTV/video" tvg-name="JAMUNA TV" tvg-logo="http://103.165.93.31/img/channels/jamunaTv.png" group-title="News", JAMUNA TV
+http://103.165.93.31:8095/ekattorTvHd/index.m3u8
+#EXTINF:-1 tvg-id="jamunaTv" tvg-name="JAMUNA TV" tvg-logo="http://103.165.93.31/img/channels/jamunatv.png" group-title="News", JAMUNA TV
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_JamunaTV/video/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_AtnNews/video" tvg-name="ATN Bangla HD" tvg-logo="http://103.165.93.31/img/channels/atnbangla.png" group-title="Bangla", ATN Bangla HD
+http://103.165.93.31:8095/jamunaTv/index.m3u8
+#EXTINF:-1 tvg-id="atnBanglaHd" tvg-name="ATN Bangla HD" tvg-logo="http://103.165.93.31/img/channels/atnbanglahd.png" group-title="Bangla", ATN Bangla HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_AtnNews/video/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_Enter10Bangla/video" tvg-name="BANGLA VISION HD" tvg-logo="http://103.165.93.31/img/channels/banglavision.png" group-title="Bangla", BANGLA VISION HD
+http://103.165.93.31:8095/atnBanglaHd/index.m3u8
+#EXTINF:-1 tvg-id="banglaVisionHd" tvg-name="BANGLA VISION HD" tvg-logo="http://103.165.93.31/img/channels/banglavisionhd.png" group-title="Bangla", BANGLA VISION HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_Enter10Bangla/video/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_channelihd/video" tvg-name="CHANNEL I HD" tvg-logo="http://103.165.93.31/img/channels/channeli.png" group-title="Bangla", CHANNEL I HD
+http://103.165.93.31:8095/banglaVisionHd/index.m3u8
+#EXTINF:-1 tvg-id="channelIHd" tvg-name="CHANNEL I HD" tvg-logo="http://103.165.93.31/img/channels/channelihd.png" group-title="Bangla", CHANNEL I HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_channelihd/video/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_gazitvhd/video" tvg-name="GTV HD" tvg-logo="http://103.165.93.31/img/channels/gtv.png" group-title="Bangla", GTV HD
+http://103.165.93.31:8095/channelIHd/index.m3u8
+#EXTINF:-1 tvg-id="gtvHd" tvg-name="GTV HD" tvg-logo="http://103.165.93.31/img/channels/gtvhd.png" group-title="Bangla", GTV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_gazitvhd/video/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_NTV/video" tvg-name="NTV HD" tvg-logo="http://103.165.93.31/img/channels/ntv.png" group-title="Bangla", NTV HD
+http://103.165.93.31:8095/gtvHd/index.m3u8
+#EXTINF:-1 tvg-id="ntvHd" tvg-name="NTV HD" tvg-logo="http://103.165.93.31/img/channels/ntvhd.png" group-title="Bangla", NTV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_NTV/video/index.m3u8
-#EXTINF:-1 tvg-id="Maasranga" tvg-name="Maasranga HD" tvg-logo="http://103.165.93.31/img/channels/maasranga.png" group-title="Bangla", Maasranga HD
+http://103.165.93.31:8095/ntvHd/index.m3u8
+#EXTINF:-1 tvg-id="maasrangaHd" tvg-name="Maasranga HD" tvg-logo="http://103.165.93.31/img/channels/maasrangahd.png" group-title="Bangla", Maasranga HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/Maasranga/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_StarJalshaHD/video" tvg-name="STAR JALSHA HD" tvg-logo="http://103.165.93.31/img/channels/starjalshahd.png" group-title="Indian Bangla", STAR JALSHA HD
+http://103.165.93.31:8095/maasrangaHd/index.m3u8
+#EXTINF:-1 tvg-id="starJalshaHd" tvg-name="STAR JALSHA HD" tvg-logo="http://103.165.93.31/img/channels/starjalshahd.png" group-title="Indian Bangla", STAR JALSHA HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_StarJalshaHD/video/index.m3u8
-#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="Jalsha Movies HD" tvg-logo="http://103.165.93.31/img/channels/jalshamovies.png" group-title="Bangla", Jalsha Movies HD
+http://103.165.93.31:8095/starJalshaHd/index.m3u8
+#EXTINF:-1 tvg-id="jalshaMoviesHd" tvg-name="Jalsha Movies HD" tvg-logo="http://103.165.93.31/img/channels/jalshamovieshd.png" group-title="Bangla", Jalsha Movies HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/JalshaMovies/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_ZeeBanglaCinemaHD/video" tvg-name="ZEE BANGLA HD" tvg-logo="http://103.165.93.31/img/channels/zeebanglahd.png" group-title="Indian Bangla", ZEE BANGLA HD
+http://103.165.93.31:8095/jalshaMoviesHd/index.m3u8
+#EXTINF:-1 tvg-id="zeeBanglaHd" tvg-name="ZEE BANGLA HD" tvg-logo="http://103.165.93.31/img/channels/zeebanglahd.png" group-title="Indian Bangla", ZEE BANGLA HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_ZeeBanglaCinemaHD/video/index.m3u8
-#EXTINF:-1 tvg-id="ZeeBanglaCinema" tvg-name="ZEE BANGLA CHINEMA HD" tvg-logo="http://103.165.93.31/img/channels/zeebanglacinema.png" group-title="Indian Bangla", ZEE BANGLA CHINEMA HD
+http://103.165.93.31:8095/zeeBanglaHd/index.m3u8
+#EXTINF:-1 tvg-id="zeeBanglaChinemaHd" tvg-name="ZEE BANGLA CHINEMA HD" tvg-logo="http://103.165.93.31/img/channels/zeebanglachinemahd.png" group-title="Indian Bangla", ZEE BANGLA CHINEMA HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/ZeeBanglaCinema/index.m3u8
-#EXTINF:-1 tvg-id="bdixbd.net_ColorsBanglaHD/video" tvg-name="COLOR BANGLA" tvg-logo="http://103.165.93.31/img/channels/colorsbanglahd.png" group-title="Indian Bangla", COLOR BANGLA
+http://103.165.93.31:8095/zeeBanglaChinemaHd/index.m3u8
+#EXTINF:-1 tvg-id="colorBangla" tvg-name="COLOR BANGLA" tvg-logo="http://103.165.93.31/img/channels/colorbangla.png" group-title="Indian Bangla", COLOR BANGLA
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/bdixbd.net_ColorsBanglaHD/video/index.m3u8
+http://103.165.93.31:8095/colorBangla/index.m3u8
 #EXTINF:-1 tvg-id="sonyAath" tvg-name="SONY AATH" tvg-logo="http://103.165.93.31/img/channels/sonyaath.png" group-title="Indian Bangla", SONY AATH
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
 http://103.165.93.31:8095/sonyAath/index.m3u8
-#EXTINF:-1 tvg-id="SonyMAX" tvg-name="SONY MAX HD" tvg-logo="http://103.165.93.31/img/channels/sonymaxhd.png" group-title="Hindi", SONY MAX HD
+#EXTINF:-1 tvg-id="sonyMaxHd" tvg-name="SONY MAX HD" tvg-logo="http://103.165.93.31/img/channels/sonymaxhd.png" group-title="Hindi", SONY MAX HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/SonyMAX/index.m3u8
-#EXTINF:-1 tvg-id="SonyTv" tvg-name="SONY TV HD" tvg-logo="http://103.165.93.31/img/channels/sonytvhd.png" group-title="Hindi", SONY TV HD
+http://103.165.93.31:8095/sonyMaxHd/index.m3u8
+#EXTINF:-1 tvg-id="sonyTvHd" tvg-name="SONY TV HD" tvg-logo="http://103.165.93.31/img/channels/sonytvhd.png" group-title="Hindi", SONY TV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/SonyTv/index.m3u8
-#EXTINF:-1 tvg-id="StarPlus" tvg-name="STAR PLUS HD" tvg-logo="http://103.165.93.31/img/channels/starplus.png" group-title="Hindi", STAR PLUS HD
+http://103.165.93.31:8095/sonyTvHd/index.m3u8
+#EXTINF:-1 tvg-id="starPlusHd" tvg-name="STAR PLUS HD" tvg-logo="http://103.165.93.31/img/channels/starplushd.png" group-title="Hindi", STAR PLUS HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarPlus/index.m3u8
-#EXTINF:-1 tvg-id="StarGold" tvg-name="STAR GOLD HD" tvg-logo="http://103.165.93.31/img/channels/starGold.png" group-title="Hindi", STAR GOLD HD
+http://103.165.93.31:8095/starPlusHd/index.m3u8
+#EXTINF:-1 tvg-id="starGoldHd" tvg-name="STAR GOLD HD" tvg-logo="http://103.165.93.31/img/channels/stargoldhd.png" group-title="Hindi", STAR GOLD HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarGold/index.m3u8
-#EXTINF:-1 tvg-id="StarMovies" tvg-name="STAR MOVIES HD" tvg-logo="http://103.165.93.31/img/channels/starMovies.png" group-title="Hindi", STAR MOVIES HD
+http://103.165.93.31:8095/starGoldHd/index.m3u8
+#EXTINF:-1 tvg-id="starMoviesHd" tvg-name="STAR MOVIES HD" tvg-logo="http://103.165.93.31/img/channels/starmovieshd.png" group-title="Hindi", STAR MOVIES HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/StarMovies/index.m3u8
-#EXTINF:-1 tvg-id="ZeeTV" tvg-name="ZEE TV HD" tvg-logo="http://103.165.93.31/img/channels/zeetv.png" group-title="Hindi", ZEE TV HD
+http://103.165.93.31:8095/starMoviesHd/index.m3u8
+#EXTINF:-1 tvg-id="zeeTvHd" tvg-name="ZEE TV HD" tvg-logo="http://103.165.93.31/img/channels/zeetvhd.png" group-title="Hindi", ZEE TV HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/ZeeTV/index.m3u8
-#EXTINF:-1 tvg-id="ZeeCinema" tvg-name="ZEE CHINEMA HD" tvg-logo="http://103.165.93.31/img/channels/zeecinemahd.png" group-title="Hindi", ZEE CHINEMA HD
+http://103.165.93.31:8095/zeeTvHd/index.m3u8
+#EXTINF:-1 tvg-id="zeeChinemaHd" tvg-name="ZEE CHINEMA HD" tvg-logo="http://103.165.93.31/img/channels/zeechinemahd.png" group-title="Hindi", ZEE CHINEMA HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/ZeeCinema/index.m3u8
-#EXTINF:-1 tvg-id="ColorsCineplex" tvg-name="COLOR CINEPLEX HD" tvg-logo="http://103.165.93.31/img/channels/colorscineplex.png" group-title="Hindi", COLOR CINEPLEX HD
+http://103.165.93.31:8095/zeeChinemaHd/index.m3u8
+#EXTINF:-1 tvg-id="colorCineplexHd" tvg-name="COLOR CINEPLEX HD" tvg-logo="http://103.165.93.31/img/channels/colorcineplexhd.png" group-title="Hindi", COLOR CINEPLEX HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/ColorsCineplex/index.m3u8
-#EXTINF:-1 tvg-id="Discovery" tvg-name="DISCOVERY HD" tvg-logo="http://103.165.93.31/img/channels/discoveryhd.png" group-title="Documentary", DISCOVERY HD
+http://103.165.93.31:8095/colorCineplexHd/index.m3u8
+#EXTINF:-1 tvg-id="discoveryHd" tvg-name="DISCOVERY HD" tvg-logo="http://103.165.93.31/img/channels/discoveryhd.png" group-title="Documentary", DISCOVERY HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/Discovery/index.m3u8
-#EXTINF:-1 tvg-id="NationalGeographic" tvg-name="NATIONAL GEOGRAPHIC HD" tvg-logo="http://103.165.93.31/img/channels/natgeohd.png" group-title="Documentary", NATIONAL GEOGRAPHIC HD
+http://103.165.93.31:8095/discoveryHd/index.m3u8
+#EXTINF:-1 tvg-id="nationalGeographicHd" tvg-name="NATIONAL GEOGRAPHIC HD" tvg-logo="http://103.165.93.31/img/channels/nationalgeographichd.png" group-title="Documentary", NATIONAL GEOGRAPHIC HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/NationalGeographic/index.m3u8
-#EXTINF:-1 tvg-id="AnimalPlanet" tvg-name="ANIMAL PLANET HD" tvg-logo="http://103.165.93.31/img/channels/animal-planet-hd-us.png" group-title="Documentary", ANIMAL PLANET HD
+http://103.165.93.31:8095/nationalGeographicHd/index.m3u8
+#EXTINF:-1 tvg-id="animalPlanetHd" tvg-name="ANIMAL PLANET HD" tvg-logo="http://103.165.93.31/img/channels/animalplanethd.png" group-title="Documentary", ANIMAL PLANET HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/AnimalPlanet/index.m3u8
-#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="CARTOON NETWORK HD" tvg-logo="http://103.165.93.31/img/channels/cartoonnetwork.png" group-title="Kids", CARTOON NETWORK HD
+http://103.165.93.31:8095/animalPlanetHd/index.m3u8
+#EXTINF:-1 tvg-id="cartoonNetworkHd" tvg-name="CARTOON NETWORK HD" tvg-logo="http://103.165.93.31/img/channels/cartoonnetworkhd.png" group-title="Kids", CARTOON NETWORK HD
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/CartoonNetwork/index.m3u8
+http://103.165.93.31:8095/cartoonNetworkHd/index.m3u8
 #EXTINF:-1 tvg-id="pogo" tvg-name="POGO" tvg-logo="http://103.165.93.31/img/channels/pogo.png" group-title="Kids", POGO
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
 http://103.165.93.31:8095/pogo/index.m3u8
-#EXTINF:-1 tvg-id="sangeetBangla" tvg-name="SANGEET BANGLA" tvg-logo="http://103.165.93.31/img/channels/sangeetBangla.jpg" group-title="Music", SANGEET BANGLA
+#EXTINF:-1 tvg-id="sangeetBangla" tvg-name="SANGEET BANGLA" tvg-logo="http://103.165.93.31/img/channels/sangeetbangla.png" group-title="Music", SANGEET BANGLA
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
 http://103.165.93.31:8095/sangeetBangla/index.m3u8
-#EXTINF:-1 tvg-id="9XJalwa" tvg-name="9X JALWA" tvg-logo="http://103.165.93.31/img/channels/9xJalwa.png" group-title="Music", 9X JALWA
+#EXTINF:-1 tvg-id="9xJalwa" tvg-name="9X JALWA" tvg-logo="http://103.165.93.31/img/channels/9xjalwa.png" group-title="Music", 9X JALWA
 #EXTVLCOPT:http-referrer=http://103.165.93.31/
-http://103.165.93.31:8095/9XJalwa/index.m3u8
+http://103.165.93.31:8095/9xJalwa/index.m3u8
